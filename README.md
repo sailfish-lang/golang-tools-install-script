@@ -1,11 +1,11 @@
-# golang-tools-install-script
+# sailfish-lang-install-script
 
-Bash script to automate Go language tools single user installation (Linux) or even removal.
-Latest filename for download at the time of this writting was for version 1.9.3 of Go. Feel free to change the variables on the beggining to match whatever version you need.
+Bash script to automate Sailfish language tools single user installation (Linux) or even removal.
+Latest filename for download at the time of this writting was for version 0.1.0 of Sailfish. Feel free to change the variables on the beggining to match whatever version you need.
 
 Tested with:
 
-* Ubuntu/MacOSX Sierra (29/10/2017)
+* Ubuntu 18.04 (3/19/2019)
 
 ## Installation
 
@@ -17,35 +17,24 @@ wget https://raw.githubusercontent.com/canha/golang-tools-install-script/master/
 
 ## Installation examples
 
-To install on Linux:
+To install:
 ```shell
-bash goinstall.sh --64
-```
-
-  Or, to install 32-bit:
-
-```shell
-bash goinstall.sh --32
-```
-
-To install on macOS:
-
-```shell
-bash goinstall.sh --darwin
+bash sailfishinstall.sh --install
 ```
 
 ## Uninstall
 
 ```shell
-bash goinstall.sh --remove
+bash sailfishinstall.sh --remove
 ```
 
 ## Notes
 
-The script will create `.go` and `go` folders on your home directory, add the needed variables and PATH expansion.
+The script will create a `.sailfish` folder in your home directory, adding the needed variables for easy compilation.
 
-`$HOME/.go folder is your where Go will be installed to.`
+`$HOME/.sailfish folder is your where Sailfish will be installed to.`
 
-`$HOME/go is the default workspace.`
+## Test
 
-Read more about the [workspace](http://golang.org/doc/code.html).
+The following should return a help message if all was installed correctly:
+`sailfishc`
