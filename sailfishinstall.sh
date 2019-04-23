@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VERSION="0.2.0"
+VERSION="0.2.1"
 
 print_help() {
     echo "Usage: bash sailfishinstall.sh OPTIONS"
